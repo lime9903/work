@@ -3,6 +3,7 @@ from datetime import datetime
 from layers import *
 from collections import OrderedDict
 from numerical_gradient import *
+import matplotlib.pyplot as plt
 
 class TwoLayerNet:
     def __init__(self, input_size, hidden_size, output_size, weight_init_std=0.01):

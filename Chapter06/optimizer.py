@@ -64,3 +64,4 @@ class Adam:
             self.v[key] += (1 - self.beta2) * (grads[key]**2 - self.v[key])
             
             params[key] -= lr_t * self.m[key] / (np.sqrt(self.v[key]) + 1e-7)
+
